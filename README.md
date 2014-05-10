@@ -3,13 +3,14 @@ gonuts
 
 A go experiment
 
-features
-========
+Features
+--------
  - acts as a webserver that displays the current time when you GET /
 
 
-installation
-============
-``
-go get github.com/jblotus/gonutes
-``
+Installation
+------------
+**go 1.1** and greater is required due to dependency on Martini(https://github.com/go-martini/martini/)):
+~~~
+go get github.com/jblotus/gonuts
+~~~
