@@ -3,12 +3,14 @@ package main
 import "fmt"
 import "./timeserver/"
 import "./rot13server/"
+import "./headermirrorserver/"
 
 func main() {
     
     for true {
         fmt.Println("Press 1 to launch timeserver")
         fmt.Println("Press 2 to launch rot13server")
+        fmt.Println("Press 3 to launch headermirrorserver")
 
         var choice string
 
@@ -19,9 +21,11 @@ func main() {
         }
 
         if choice == "1" {
-            timeserver.NewServer();   
+            timeserver.NewServer()
         } else if choice == "2" {
-            rot13server.NewServer();
+            rot13server.NewServer()
+        } else if choice == "3" {
+            headermirrorserver.NewServer()
         } else {
             fmt.Println("That is not a valid choice")
         }
