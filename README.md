@@ -16,9 +16,10 @@ Features
  - acts as a webserver that displays the current time when you GET /
 
 
-Installation
+Dependencies
 ------------
 **go 1.1** and greater is required due to dependency on Martini(https://github.com/go-martini/martini/)):
 ~~~
-go get github.com/jblotus/gonuts
+go get github.com/go-martini/martini
+go get github.com/joshlf13/rot13
 ~~~
