@@ -1,6 +1,6 @@
 package main
 
-import "github.com/jblotus/gonuts/timeserver/"
+import "./timeserver/"
 
 func main() {
   timeserver.NewServer();
