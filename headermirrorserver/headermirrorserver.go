@@ -5,11 +5,19 @@ import "io"
 import "net/http"
 
 func HeaderMirror(w http.ResponseWriter, req *http.Request) {
-	io.WriteString(w, "Here are your headers\n")
+	fmt.Println("sent header to client")
 
 	for key, value := range req.Header {
-		//todo output to screen
-		fmt.Println(key, value)
+		var output string
+
+		output += key
+		output += ": "
+
+		for _, eachHeader := range value {
+			output += eachHeader
+			output += "\n"
+		}
+		io.WriteString(w, output)
 	}
 }
 
