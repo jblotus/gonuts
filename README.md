@@ -5,6 +5,8 @@ A go experiment.
 features
 --------
  - tells the user the current time 
+ - rot13 encodes text
+ - displays http request headers
 
 
 instructions
