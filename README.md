@@ -15,7 +15,9 @@ Features
 
 Running it
 ----------
+~~~
 go run gonuts.go
+~~~
 
 choose an option from the menu
 
