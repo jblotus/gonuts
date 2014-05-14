@@ -3,10 +3,6 @@ gonuts
 A go experiment, intended to help me learn go
 
 
-instructions
-------------
-go run gonuts.go
-
 Features
 --------
  - acts as a webserver that displays the current time when you GET /
