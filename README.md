@@ -1,20 +1,21 @@
 gonuts
 ======
-A go experiment.
+A go experiment, intended to help me learn go
 
-features
---------
- - tells the user the current time 
-
-
-instructions
-------------
-go run gonuts.go
 
 Features
 --------
  - acts as a webserver that displays the current time when you GET /
+ - rot13 encodes text when you GET /mytext
+ - displays http request headers when you get /
 
+Running it
+----------
+~~~
+go run gonuts.go
+~~~
+
+choose an option from the menu
 
 Dependencies
 ------------
