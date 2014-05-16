@@ -22,15 +22,16 @@ func main() {
 			fmt.Println("Error: ", err)
 		}
 
-		if choice == "1" {
+		switch choice {
+		case "1":
 			timeserver.NewServer()
-		} else if choice == "2" {
+		case "2":
 			rot13server.NewServer()
-		} else if choice == "3" {
+		case "3":
 			headermirrorserver.NewServer()
-		} else if choice == "4" {
+		case "4":
 			sha256server.NewServer()
-		} else {
+		default:
 			fmt.Println("That is not a valid choice")
 		}
 	}
