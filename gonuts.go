@@ -15,6 +15,7 @@ func main() {
 		fmt.Println("Press 3 to launch headermirrorserver")
 		fmt.Println("Press 4 to launch sha256server")
 		fmt.Println("Press 5 to solve euler #1")
+		fmt.Println("Press 6 to solve euler #2")
 
 		var choice string
 
@@ -36,6 +37,9 @@ func main() {
 		case "5":
 			//move these euler probs to a diff menu
 			euler.Problem1()
+		case "6":
+			//move these euler probs to a diff menu
+			euler.Problem2()
 		default:
 			fmt.Println("That is not a valid choice")
 		}
