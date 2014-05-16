@@ -5,6 +5,7 @@ import "./timeserver/"
 import "./rot13server/"
 import "./headermirrorserver/"
 import "./sha256server/"
+import "./euler/"
 
 func main() {
 
@@ -13,6 +14,7 @@ func main() {
 		fmt.Println("Press 2 to launch rot13server")
 		fmt.Println("Press 3 to launch headermirrorserver")
 		fmt.Println("Press 4 to launch sha256server")
+		fmt.Println("Press 5 to solve euler #1")
 
 		var choice string
 
@@ -31,6 +33,9 @@ func main() {
 			headermirrorserver.NewServer()
 		case "4":
 			sha256server.NewServer()
+		case "5":
+			//move these euler probs to a diff menu
+			euler.Problem1()
 		default:
 			fmt.Println("That is not a valid choice")
 		}
