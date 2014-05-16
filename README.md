@@ -8,6 +8,7 @@ Features
  - acts as a webserver that displays the current time when you GET /
  - rot13 encodes text when you GET /mytext
  - displays http request headers when you get /
+ - solves problems from project euler
 
 Running it
 ----------
