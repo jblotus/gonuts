@@ -9,6 +9,7 @@ Features
  - rot13 encodes text when you GET /mytext
  - displays http request headers when you get /
  - generates random ints in a concurrent fashion
+ - solves some project euler problems
 
 Running it
 ----------

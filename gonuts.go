@@ -18,6 +18,7 @@ func main() {
 		fmt.Println("Press 5 to launch concurrentrng")
 		fmt.Println("Press 6 to solve euler #1")
 		fmt.Println("Press 7 to solve euler #2")
+		fmt.Println("Press 8 to solve euler #3")
 
 		var choice string
 
@@ -44,6 +45,9 @@ func main() {
 		case "7":
 			//move these euler probs to a diff menu
 			euler.Problem2()
+		case "8":
+			//move these euler probs to a diff menu
+			euler.Problem3()
 		default:
 			fmt.Println("That is not a valid choice")
 		}
