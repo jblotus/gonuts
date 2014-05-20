@@ -1,6 +1,7 @@
 package main
 
 import "fmt"
+import "./fileprinter/"
 import "./timeserver/"
 import "./rot13server/"
 import "./headermirrorserver/"
@@ -11,6 +12,7 @@ import "./euler/"
 func main() {
 
 	for true {
+		fmt.Println("Press F to launch file printer")
 		fmt.Println("Press 1 to launch timeserver")
 		fmt.Println("Press 2 to launch rot13server")
 		fmt.Println("Press 3 to launch headermirrorserver")
@@ -29,6 +31,8 @@ func main() {
 		}
 
 		switch choice {
+		case "f", "F":
+			fileprinter.PrintFile()
 		case "1":
 			timeserver.NewServer()
 		case "2":
